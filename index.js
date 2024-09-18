@@ -33,7 +33,7 @@ function isElementInCenter(el) {
 
 // Encontra o elemento e verifica se está no centro
 function findDivInViewport() {
-    const divs = document.querySelectorAll('div');
+    const divs = document.querySelectorAll('.dog-container');
     for (let i = 0; i < divs.length; i++) {
         if (isElementInCenter(divs[i])) {
             return divs[i];
