@@ -1,0 +1,76 @@
+body, html {
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    height: 945vh;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.page-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-bar {
+    position: sticky;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    z-index: 999;
+}
+
+.scroll-bar::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.scroll-list {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.scroll-list li {
+    min-width: 200px;
+    font-size: 3rem;
+    line-height: 1em;
+    list-style: none;
+}
+
+.main-page {
+    border: solid 1px black;
+    position: absolute;
+    padding: 100px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 1200px;
+}
+
+.ferret-container {
+    margin-top: 50px;
+}
+
+.ferret-container img {
+    max-width: 100%;
+}
+
+:target {
+    scroll-margin-top: 20vh;
+}
